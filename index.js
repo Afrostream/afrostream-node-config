@@ -27,13 +27,13 @@ Config.prototype.merge = function (env, data) {
   _.merge(this.data[env], data);
 };
 
-Config.prototype.get = function (env, key) {
-  assert(typeof this.data[env] !== 'undefined');
+Config.prototype.get = function (key) {
+  assert(typeof this.data[process.env.NODE_ENV] !== 'undefined');
 
-  if (key) {
-    return this.data[env][key];
+  if (!key) {
+    return this.data[process.env.NODE_ENV];
   }
-  return this.data[env];
+  return this.data[process.env.NODE_ENV][key];
 };
 
 module.exports = new Config();
