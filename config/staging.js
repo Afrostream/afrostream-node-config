@@ -17,7 +17,7 @@ module.exports = {
 
   "afrostream-back-end": {
     baseUrl: "https://afr-back-end-staging.herokuapp.com",
-    
+
     sequelize: {
       uri: 'postgres://u4fp4ad34q8qvi:pt7eht3e9v3lnehhh27m7sfeol@ec2-54-228-194-210.eu-west-1.compute.amazonaws.com:5522/d71on7act83b7i',
       options: {
