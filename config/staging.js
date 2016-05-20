@@ -2,6 +2,7 @@
 
 module.exports = {
   // SELF
+  env: 'staging',
   ip: process.env.IP,
   port: process.env.PORT,
   basicAuth: {

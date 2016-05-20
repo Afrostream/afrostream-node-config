@@ -7,9 +7,9 @@ var _ = require('lodash');
 var Config = function () {
   this.data = {
     'development': require('./config/development'),
-    'test': require('./config/development'),
-    'staging': require('./config/development'),
-    'production': require('./config/development')
+    'test': require('./config/test'),
+    'staging': require('./config/staging'),
+    'production': require('./config/production')
   };
 };
 

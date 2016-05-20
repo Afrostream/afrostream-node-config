@@ -2,6 +2,7 @@
 
 module.exports = {
   // SELF
+  env: 'development',
   ip: process.env.IP,
   port: process.env.PORT,
   basicAuth: {
