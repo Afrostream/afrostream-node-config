@@ -44,6 +44,18 @@ module.exports = {
     baseUrl: 'https://s3-eu-west-1.amazonaws.com'
   },
 
+  cookies: {
+    secret: '2342REJIEJIZJO29J9JGZF',
+    test: {
+      name: 'test',
+      domain: '.afrostream.dev'
+    },
+    netsize: {
+      name: 'netsize',
+      domain: '.afrostream.dev'
+    }
+  },
+
   pf: {
     baseUrl: 'http://p-afsmsch-001.afrostream.dev'
   },

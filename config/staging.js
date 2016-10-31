@@ -47,6 +47,18 @@ module.exports = {
     baseUrl: 'https://s3-eu-west-1.amazonaws.com'
   },
 
+  cookies: {
+    secret: '2342REJIEJIZJO29J9JGZF',
+    test: {
+      name: 'test',
+      domain: 'afr-api-v1-staging.herokuapp.com'
+    },
+    netsize: {
+      name: 'netsize',
+      domain: '.afrostream.tv'
+    }
+  },
+
   pf: {
     baseUrl: 'http://p-afsmsch-001.afrostream.tv:4000'
   },
