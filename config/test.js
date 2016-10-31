@@ -10,6 +10,18 @@ module.exports = {
     password: 'test'
   },
 
+  cookies: {
+    secret: '2342REJIEJIZJO29J9JGZF',
+    test: {
+      name: 'test',
+      domain: '.afrostream.dev'
+    },
+    netsize: {
+      name: 'netsize',
+      domain: '.afrostream.dev'
+    }
+  },
+
   // THIRD-PARTY
   "afrostream-front-end": {
     baseUrl: 'http://localhost:3000'
@@ -42,18 +54,6 @@ module.exports = {
     secret: '3yLxjn7omBzGPS6Z0x0mwGYpEM/aRxw2TBTOGLPV',
     region: 'eu-west-1',
     baseUrl: 'https://s3-eu-west-1.amazonaws.com'
-  },
-
-  cookies: {
-    secret: '2342REJIEJIZJO29J9JGZF',
-    test: {
-      name: 'test',
-      domain: '.afrostream.dev'
-    },
-    netsize: {
-      name: 'netsize',
-      domain: '.afrostream.dev'
-    }
   },
 
   pf: {

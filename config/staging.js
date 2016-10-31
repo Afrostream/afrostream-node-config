@@ -10,6 +10,18 @@ module.exports = {
     password: 'afrostream77'
   },
 
+  cookies: {
+    secret: '2342REJIEJIZJO29J9JGZF',
+    test: {
+      name: 'test',
+      domain: 'afr-api-v1-staging.herokuapp.com'
+    },
+    netsize: {
+      name: 'netsize',
+      domain: '.afrostream.tv'
+    }
+  },
+
   // THIRD-PARTY
   "afrostream-front-end": {
     baseUrl: 'https://staging.afrostream.tv'
@@ -45,18 +57,6 @@ module.exports = {
     secret: '3yLxjn7omBzGPS6Z0x0mwGYpEM/aRxw2TBTOGLPV',
     region: 'eu-west-1',
     baseUrl: 'https://s3-eu-west-1.amazonaws.com'
-  },
-
-  cookies: {
-    secret: '2342REJIEJIZJO29J9JGZF',
-    test: {
-      name: 'test',
-      domain: 'afr-api-v1-staging.herokuapp.com'
-    },
-    netsize: {
-      name: 'netsize',
-      domain: '.afrostream.tv'
-    }
   },
 
   pf: {
