@@ -5,6 +5,7 @@ module.exports = {
   env: 'staging',
   ip: process.env.IP,
   port: process.env.PORT,
+  portssl: process.env.PORTSSL,
   basicAuth: {
     user: 'afrostream',
     password: 'afrostream77'

@@ -5,6 +5,7 @@ module.exports = {
   env: 'development',
   ip: process.env.IP,
   port: process.env.PORT,
+  portssl: process.env.PORTSSL,
 
   basicAuth: {
     user: process.env.BASIC_AUTH_USER || 'dev',
