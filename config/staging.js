@@ -15,7 +15,7 @@ module.exports = {
     secret: '2342REJIEJIZJO29J9JGZF',
     test: {
       name: 'test',
-      domain: 'afr-api-v1-staging.herokuapp.com'
+      domain: '.afrostream.tv'
     },
     netsize: {
       name: 'netsize',
@@ -32,7 +32,7 @@ module.exports = {
     baseUrl: "https://afr-back-end-staging.herokuapp.com",
 
     sequelize: {
-      uri: 'postgres://u4fp4ad34q8qvi:pt7eht3e9v3lnehhh27m7sfeol@ec2-54-228-194-210.eu-west-1.compute.amazonaws.com:5522/d71on7act83b7i',
+      uri: 'postgres://u4fp4ad34q8qvi:pt7eht3e9v3lnehhh27m7sfeol@ec2-79-125-120-32.eu-west-1.compute.amazonaws.com:5542/d71on7act83b7i',
       options: {
         logging: console.log,
         storage: 'afrostream.postgres',

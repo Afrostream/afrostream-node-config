@@ -32,7 +32,7 @@ module.exports = {
     baseUrl: "https://afrostream-backend.herokuapp.com",
 
     sequelize: {
-      uri: 'postgres://u9u17sot1un0hr:p6o70uurl15iblacuu0g042e742@ec2-54-217-234-109.eu-west-1.compute.amazonaws.com:5552/d8kcdisl77do4k',
+      uri: process.env.DATABASE_URL || 'postgres://u9u17sot1un0hr:p6o70uurl15iblacuu0g042e742@ec2-54-217-206-146.eu-west-1.compute.amazonaws.com:5492/d8kcdisl77do4k',
       options: {
         logging: false,
         storage: 'afrostream.postgres',
