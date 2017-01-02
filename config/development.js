@@ -51,6 +51,12 @@ module.exports = {
     }
   },
 
+  "afrostream-admin": {
+    baseUrl: process.env.AFROSTREAM_ADMIN_BASEURL || "http://localhost:9999",
+    host: process.env.AFROSTREAM_ADMIN_HOST || "localhost",
+    authority: process.env.AFROSTREAM_ADMIN_AUTHORITY || "localhost:9999"
+  },
+
   amazon: {
     key: process.env.AWS_S3_KEY || 'AKIAIJ7BEEEIYX3CZDOQ',
     secret: process.env.AWS_S3_SECRET || '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',

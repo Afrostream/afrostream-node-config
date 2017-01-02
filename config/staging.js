@@ -53,6 +53,12 @@ module.exports = {
     }
   },
 
+  "afrostream-admin": {
+    baseUrl: process.env.AFROSTREAM_ADMIN_BASEURL || "http://afr-admin-staging.herokuapp.com",
+    host: process.env.AFROSTREAM_ADMIN_HOST || "afr-admin-staging.herokuapp.com",
+    authority: process.env.AFROSTREAM_ADMIN_AUTHORITY || "afr-admin-staging.herokuapp.com"
+  },
+
   amazon: {
     key: 'AKIAIJ7BEEEIYX3CZDOQ',
     secret: '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',

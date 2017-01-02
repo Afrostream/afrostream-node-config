@@ -48,6 +48,12 @@ module.exports = {
     }
   },
 
+  "afrostream-admin": {
+    baseUrl: process.env.AFROSTREAM_ADMIN_BASEURL || "http://admin.afrostream.tv",
+    host: process.env.AFROSTREAM_ADMIN_HOST || "admin.afrostream.tv",
+    authority: process.env.AFROSTREAM_ADMIN_AUTHORITY || "admin.afrostream.tv"
+  },
+
   algolia: {
     apiKey: '47d48040a13e973aca2ea9f492eca17e',
     appId: '3OKNPL7ZVA'
