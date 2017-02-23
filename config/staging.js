@@ -59,6 +59,11 @@ module.exports = {
     authority: process.env.AFROSTREAM_ADMIN_AUTHORITY || "afr-admin-staging.herokuapp.com"
   },
 
+  algolia: {
+    apiKey: '47d48040a13e973aca2ea9f492eca17e',
+    appId: '3OKNPL7ZVA'
+  },
+
   amazon: {
     key: 'AKIAIJ7BEEEIYX3CZDOQ',
     secret: '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',
