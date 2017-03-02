@@ -33,7 +33,7 @@ module.exports = {
     baseUrl: process.env.AFROSTREAM_BACK_END_BASEURL || "http://localhost:5602",
 
     sequelize: {
-      uri: process.env.AFROSTREAM_BACK_END_DATABASE_URL || 'postgres://postgres:postgres@localhost:5700/afrostream',
+      uri: process.env.AFROSTREAM_BACK_END_DATABASE_URL || 'postgres://postgres:postgres@localhost:5432/afrostream',
       options: {
         logging: console.log,
         storage: 'dev.postgres',
