@@ -7,8 +7,8 @@ module.exports = {
   port: process.env.PORT,
   portssl: process.env.PORTSSL,
   basicAuth: {
-    user: 'test',
-    password: 'test'
+    user: process.env.BASIC_AUTH_USER || 'test',
+    password: process.env.BASIC_AUTH_PASSWORD || 'test'
   },
 
   cookies: {
@@ -25,11 +25,11 @@ module.exports = {
 
   // THIRD-PARTY
   "afrostream-front-end": {
-    baseUrl: 'http://localhost:3000'
+    baseUrl: process.env.AFROSTREAM_FRONT_END_BASEURL || 'http://localhost:3000'
   },
 
   "afrostream-back-end": {
-    baseUrl: "http://localhost:9000",
+    baseUrl: process.env.AFROSTREAM_BACK_END_BASEURL || "http://localhost:9000",
 
     sequelize: {
       uri: 'postgres://postgres:root@localhost:5432/afrostream',

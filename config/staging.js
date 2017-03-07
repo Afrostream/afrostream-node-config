@@ -7,8 +7,8 @@ module.exports = {
   port: process.env.PORT,
   portssl: process.env.PORTSSL,
   basicAuth: {
-    user: 'afrostream',
-    password: 'afrostream77'
+    user: process.env.BASIC_AUTH_USER || 'afrostream',
+    password: process.env.BASIC_AUTH_PASSWORD || 'afrostream77'
   },
 
   cookies: {
@@ -25,11 +25,11 @@ module.exports = {
 
   // THIRD-PARTY
   "afrostream-front-end": {
-    baseUrl: 'https://staging.afrostream.tv'
+    baseUrl: process.env.AFROSTREAM_FRONT_END_BASEURL || 'https://staging.afrostream.tv'
   },
 
   "afrostream-back-end": {
-    baseUrl: "https://afr-back-end-staging.herokuapp.com",
+    baseUrl: process.env.AFROSTREAM_BACK_END_BASEURL || "https://afr-back-end-staging.herokuapp.com",
 
     sequelize: {
       uri: 'postgres://u4fp4ad34q8qvi:pt7eht3e9v3lnehhh27m7sfeol@ec2-79-125-120-32.eu-west-1.compute.amazonaws.com:5542/d71on7act83b7i',
