@@ -26,11 +26,11 @@ module.exports = {
 
   // THIRD-PARTY
   "afrostream-front-end": {
-    baseUrl: process.env.AFROSTREAM_FRONT_END_BASEURL || 'http://localhost:5600'
+    baseUrl: process.env.AFROSTREAM_FRONT_END_BASEURL || 'http://localhost:5705'
   },
 
   "afrostream-back-end": {
-    baseUrl: process.env.AFROSTREAM_BACK_END_BASEURL || "http://localhost:5602",
+    baseUrl: process.env.AFROSTREAM_BACK_END_BASEURL || "http://localhost:5702",
 
     sequelize: {
       uri: process.env.AFROSTREAM_BACK_END_DATABASE_URL || 'postgres://postgres:root@localhost:5432/afrostream',
@@ -44,7 +44,7 @@ module.exports = {
     },
 
     mq: {
-      endPoint: process.env.AFROSTREAM_BACK_END_AMQP_URL || 'amqp://localhost:5603',
+      endPoint: process.env.AFROSTREAM_BACK_END_AMQP_URL || 'amqp://localhost:5672',
       exchangeName: 'afrostream-backend',
       autoReconnect: true,
       displayErrors: true
@@ -52,9 +52,9 @@ module.exports = {
   },
 
   "afrostream-admin": {
-    baseUrl: process.env.AFROSTREAM_ADMIN_BASEURL || "http://localhost:9999",
+    baseUrl: process.env.AFROSTREAM_ADMIN_BASEURL || "http://localhost:5704",
     host: process.env.AFROSTREAM_ADMIN_HOST || "localhost",
-    authority: process.env.AFROSTREAM_ADMIN_AUTHORITY || "localhost:9999"
+    authority: process.env.AFROSTREAM_ADMIN_AUTHORITY || "localhost:5704"
   },
 
   amazon: {
